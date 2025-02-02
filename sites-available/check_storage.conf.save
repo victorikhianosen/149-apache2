@@ -1,0 +1,11 @@
+VirtualHost 46.101.23.167:82>
+   DocumentRoot "/var/www/html/checkStorage"
+   <Directory /var/www/html/checkStorage>
+       DirectoryIndex index.php
+       Options +Indexes +FollowSymLinks +MultiViews +Includes
+       AllowOverride All
+       Order allow,deny
+       Allow from all
+       Require all granted
+   </Directory>
+</VirtualHost>
